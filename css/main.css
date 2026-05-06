@@ -3,4 +3,8 @@ body {
   background-image: url("../images/bg-portfolio-homepage.png");
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.left-header-bar {
+  background-color: #D4FFBE;
 }/*# sourceMappingURL=main.css.map */
