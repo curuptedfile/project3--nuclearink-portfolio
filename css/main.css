@@ -16,12 +16,13 @@ body {
 
 header {
   /*this background image is temp, and needs to be changes to a png to get the ends to be transprent (may 6th)*/
-  aspect-ratio: 4764/5132;
-  background-image: url("../images/title-bg-long.jpg");
+  aspect-ratio: 4764/4655;
+  background-image: url("../images/SVG/title-bg-long.svg");
+  background-repeat: no-repeat;
   background-size: 100%;
   display: grid;
   grid-template-areas: "header-bar title";
-  grid-template-columns: 150px auto;
+  grid-template-columns: clamp(44px, 5%, 150px) auto;
 }
 header .left-header-bar {
   display: flex;
@@ -40,11 +41,27 @@ header .nuclear-ink-title {
   grid-area: title;
 }
 
-.about-text {
-  color: #D4FFBE;
-}
-
 .ink-and-about {
+  display: grid;
   grid-template-areas: "ink-and-bio-pic about-text";
-  grid-template-columns: 40% auto;
+  grid-template-columns: min(50%, 500px) auto;
+  gap: 10px;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
+}
+.ink-and-about .ink-and-bio-pic {
+  grid-area: ink-and-bio-pic;
+  margin: -30% 0;
+}
+.ink-and-about .ink-and-bio-pic img {
+  width: 100%;
+  height: auto;
+}
+.ink-and-about .about-text {
+  grid-area: about-text;
+  align-content: center;
+  color: #D4FFBE;
 }/*# sourceMappingURL=main.css.map */
