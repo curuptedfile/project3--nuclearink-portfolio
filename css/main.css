@@ -1,10 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   /*this is the bg image for the get portfolio home page*/
   background-image: url("../images/bg-portfolio-homepage.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
 }
 
-.left-header-bar {
+header {
+  /*this background image is temp, and needs to be changes to a png to get the ends to be transprent (may 6th)*/
+  aspect-ratio: 4764/5132;
+  background-image: url("../images/title-bg-long.jpg");
+  background-size: 100%;
+  display: grid;
+  grid-template-areas: "header-bar title";
+  grid-template-columns: 150px auto;
+}
+header .left-header-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-area: header-bar;
+}
+header .left-header-bar a {
   background-color: #D4FFBE;
+  display: block;
+}
+header .left-header-bar img {
+  width: 100%;
+}
+header .nuclear-ink-title {
+  grid-area: title;
+}
+
+.about-text {
+  color: #D4FFBE;
+}
+
+.ink-and-about {
+  grid-template-areas: "ink-and-bio-pic about-text";
+  grid-template-columns: 40% auto;
 }/*# sourceMappingURL=main.css.map */
