@@ -70,7 +70,19 @@ header {
   .about-text {
     grid-area: about-text;
     align-content: center;
-    color: #D4FFBE
+    color: pink;
   }
 
+}
+
+.zero {
+  background-color: #42E97A;
+}
+
+.three {
+  background-color: #36BF84;
+}
+
+.slots-open-box {
+  color: #D4FFBE;
 }
