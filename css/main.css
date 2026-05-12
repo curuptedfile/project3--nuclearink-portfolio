@@ -135,30 +135,33 @@ header .nuclear-ink-title {
 }
 
 .left-decore {
-  padding: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  grid-area: left-decore;
 }
 .left-decore .art-gallery {
   color: #43455D;
 }
 .left-decore .jappanese-text {
   background: #42E97A;
-  width: auto;
-  height: 90px;
-  margin: 20px;
+  width: 90px;
+  height: auto;
+  margin: 15px;
   font-size: 80px;
   color: #101344;
 }
 .left-decore .left-decore-box-neongreen {
   background: #97E826;
-  width: auto;
-  height: 200px;
-  margin: 20px;
+  width: 200px;
+  height: auto;
+  margin: 15px;
 }
 .left-decore .left-decore-box-lightgreen {
   background: #CBFF5C;
-  width: auto;
-  height: 100px;
-  margin: 20px;
+  width: 100px;
+  height: auto;
+  margin: 15px;
 }
 
 .gallery-buttons .character-button {
