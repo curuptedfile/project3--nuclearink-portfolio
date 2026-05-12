@@ -14,6 +14,10 @@ body {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 header {
   /*this background image is temp, and needs to be changes to a png to get the ends to be transprent (may 6th)*/
   aspect-ratio: 4764/4655;
@@ -63,5 +67,17 @@ header .nuclear-ink-title {
 .ink-and-about .about-text {
   grid-area: about-text;
   align-content: center;
+  color: pink;
+}
+
+.zero {
+  background-color: #42E97A;
+}
+
+.three {
+  background-color: #36BF84;
+}
+
+.slots-open-box {
   color: #D4FFBE;
 }/*# sourceMappingURL=main.css.map */
