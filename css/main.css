@@ -103,22 +103,102 @@ header .nuclear-ink-title {
 }
 .commsion-section .slots-open h1 {
   color: #D4FFBE;
+  margin-left: 10px;
 }
 .commsion-section .slots-open .counter-box {
   background-color: #D4FFBE;
-  padding: 20px;
-  margin: 10px;
+  padding-left: 14px;
+  padding-bottom: 14th;
+  margin: 15px;
+  position: center;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2px;
+  height: 190px;
+  width: 80px;
 }
 .commsion-section .slots-open .zero,
 .commsion-section .slots-open .three {
   padding: 20px;
+  height: 6.5vh;
+  width: 6vw;
 }
 .commsion-section .slots-open .zero {
   background-color: #42E97A;
 }
 .commsion-section .slots-open .three {
   background-color: #36BF84;
+}
+.commsion-section .slots-open .slash {
+  margin: -23px;
+  padding-left: 45px;
+}
+
+.gallery-buttons {
+  padding: 20px;
+}
+.gallery-buttons .jappanese-text {
+  background: #42E97A;
+  width: auto;
+  height: 60px;
+}
+.gallery-buttons .left-decore-box-neongreen {
+  background: #97E826;
+  width: auto;
+  height: 200px;
+}
+.gallery-buttons .left-decore-box-lightgreen {
+  background: #CBFF5C;
+  width: auto;
+  height: 100px;
+}
+.gallery-buttons .character-button {
+  /*background-image: url('../images/SVG/');*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: 100%;*/
+  background-color: #D4FFBE;
+  height: 300px;
+  width: 300px;
+}
+.gallery-buttons .Ui-button {
+  /*background-image: url('../images/SVG/');*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: 100%;*/
+  background-color: #D4FFBE;
+  height: 300px;
+  width: 300px;
+}
+.gallery-buttons .Bg-button {
+  /*background-image: url('../images/SVG/');*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: 100%;*/
+  background-color: #D4FFBE;
+  height: 300px;
+  width: 300px;
+}
+.gallery-buttons .animation-button {
+  /*background-image: url('../images/SVG/');*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: 100%;*/
+  background-color: #D4FFBE;
+  height: 300px;
+  width: 300px;
+}
+.gallery-buttons .graphic-button {
+  /*background-image: url('../images/SVG/');*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: 100%;*/
+  background-color: #D4FFBE;
+  height: 300px;
+  width: 300px;
+}
+
+.footer-socials {
+  background-color: #D4FFBE;
+}
+
+.footer-text {
+  background-color: #D4FFBE;
+  height: 420px;
+  width: 300px;
 }/*# sourceMappingURL=main.css.map */
