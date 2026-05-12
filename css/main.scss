@@ -1,16 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+
 html {
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-@font-face {
-  font-family: 'Balthazar'; /* The name you'll use in your CSS */
-  src: url('fonts/MBalthazar-Regular.ttf') format('Balthazar'); /* Path to the folder */
-  font-weight: normal;
-  font-style: normal;
 }
 
 body {
@@ -23,6 +18,12 @@ body {
 
 img {
   max-width: 100%;
+}
+
+h1 {
+  font-family: "Balthazar", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
@@ -97,9 +98,12 @@ header {
   position: relative;
   z-index: 100;
 
-  h1 {
-    color: #0E1242;
-    background-color: #42E97A;
+  .commission-text {
+
+    h1 {
+      color: #0E1242;
+      background-color: #42E97A;
+    }
   }
 
   .commsion-banner {
@@ -111,12 +115,26 @@ header {
     }
   }
 
-  .slots-open-box {
-    background-color: #D4FFBE;
+  .slots-open {
+    display: flex;
+    flex-direction: column;
 
     h1{
       color: #D4FFBE;
-      font-style: 'Balthazar';
+    }
+
+    .counter-box {
+      background-color: #D4FFBE;
+      padding: 20px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .zero,
+    .three {
+      padding: 20px;
     }
 
     .zero {
