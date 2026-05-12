@@ -159,27 +159,38 @@ header {
   }
 }
 
-.gallery-buttons{
+.left-decore{
   padding: 20px;
  
+  .art-gallery {
+    color: #43455D;
+  }
+
   .jappanese-text {
   background: #42E97A;
   width: auto;
-  height: 60px;
+  height: 90px;
+  margin: 20px;
+  font-size: 80px;
+  color: #101344;
   }
 
   .left-decore-box-neongreen{
   background: #97E826;
   width: auto;
   height: 200px;
+  margin: 20px;
   }
 
   .left-decore-box-lightgreen{
   background: #CBFF5C;
   width: auto;
   height: 100px;
+  margin: 20px;
   }
+}
 
+.gallery-buttons {
   .character-button{
     /*background-image: url('../images/SVG/');*/
     /*background-repeat: no-repeat;*/
@@ -231,7 +242,22 @@ header {
 }
 
 .footer-text {
-background-color:#D4FFBE;
-height: 420px;
-width: 300px;
+  background-color:#D4FFBE;
+  height: 420px;
+  width: 300px;
+  grid-template-rows: auto;
+  grid-template-areas: "Biography contact character-design"
+  "Backdrops animations graphic-design physical-work"
 }
+
+.inkbottle{
+  height: 550px;
+  width: 550px;
+}
+
+.footer-teal-box{
+  background-color: #36BF84;
+  height: 550px;
+  width: auto;
+}
+
