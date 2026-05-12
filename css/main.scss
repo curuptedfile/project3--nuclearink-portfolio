@@ -81,7 +81,7 @@ header {
   .about-text {
     grid-area: about-text;
     align-content: center;
-    color: pink;
+    color: #D4FFBE;
   }
 
 }
@@ -94,9 +94,8 @@ header {
   gap: 10px;
   width: 90%;
   max-width: 1440px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 100;
+  margin: 1 auto;
+  position: center;
 
   .commission-text {
 
@@ -126,6 +125,7 @@ header {
     .counter-box {
       background-color: #D4FFBE;
       padding: 20px;
+      margin: 10px;
 
       display: flex;
       flex-direction: column;
