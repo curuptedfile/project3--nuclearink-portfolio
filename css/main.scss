@@ -6,6 +6,13 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: 'Balthazar'; /* The name you'll use in your CSS */
+  src: url('fonts/MBalthazar-Regular.ttf') format('Balthazar'); /* Path to the folder */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   /*this is the bg image for the get portfolio home page*/
   background-image: url('../images/bg-portfolio-homepage.png');
@@ -19,7 +26,6 @@ img {
 }
 
 header {
-  /*this background image is temp, and needs to be changes to a png to get the ends to be transprent (may 6th)*/
   aspect-ratio: 4764/4655;
   background-image: url('../images/SVG/title-bg-long.svg');
   background-repeat: no-repeat;
@@ -79,14 +85,46 @@ header {
 
 }
 
-.zero {
-  background-color: #42E97A;
-}
+.commsion-section {
+  display: grid;
+  grid-template-areas: "commsion-banner"
+  "commsion-text slots-open-box";
+  grid-template-columns: 40% auto;
+  gap: 10px;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100;
 
-.three {
-  background-color: #36BF84;
-}
+  h1 {
+    color: #0E1242;
+    background-color: #42E97A;
+  }
 
-.slots-open-box {
-  color: #D4FFBE;
+  .commsion-banner {
+    margin: 60% 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .slots-open-box {
+    background-color: #D4FFBE;
+
+    h1{
+      color: #D4FFBE;
+      font-style: 'Balthazar';
+    }
+
+    .zero {
+      background-color: #42E97A;
+    }
+      
+    .three {
+      background-color: #36BF84;
+    }
+  }
 }
