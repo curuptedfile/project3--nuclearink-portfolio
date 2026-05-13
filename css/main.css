@@ -143,6 +143,11 @@ header .nuclear-ink-title {
   color: #43455D;
 }
 .left-decore .jappanese-text {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+.left-decore .jappanese-text h1 {
   background: #42E97A;
   width: 90px;
   height: auto;

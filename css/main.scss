@@ -182,26 +182,32 @@ header {
   }
 
   .jappanese-text {
-  background: #42E97A;
-  width: 90px;
-  height: auto;
-  margin: 15px;
-  font-size: 80px;
-  color: #101344;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+
+    h1 {
+      background: #42E97A;
+      width: 90px;
+      height: auto;
+      margin: 15px;
+      font-size: 80px;
+      color: #101344;
+    }
   }
 
   .left-decore-box-neongreen{
-  background: #97E826;
-  width: 200px;
-  height: auto;
-  margin: 15px;
+    background: #97E826;
+    width: 200px;
+    height: auto;
+    margin: 15px;
   }
 
   .left-decore-box-lightgreen{
-  background: #CBFF5C;
-  width: 100px;
-  height: auto;
-  margin: 15px;
+    background: #CBFF5C;
+    width: 100px;
+    height: auto;
+    margin: 15px;
   }
 }
 
