@@ -117,31 +117,42 @@ header {
   .slots-open {
     display: flex;
     flex-direction: column;
+    margin: 0 15px; // top and bottom are 0, left and right are 15px
 
     h1{
       color: #D4FFBE;
-      margin-left: 10px;
+      // margin-left: 10px;
     }
     
 
     .counter-box {
       background-color: #D4FFBE;
-      padding-left: 14px;
-      padding-bottom: 14th;
-      margin: 15px;
-      position: center;
+      // padding-left: 14px;
+      // padding-bottom: 14th;
+      padding: 14px;
+      // margin: 15px;
+      // position: center;
       display: flex;
       flex-direction: column;
       gap: 2px;
-      height: 190px; 
+      // height: 190px; 
       width: 80px;
+
+       h2 {
+        margin: 0;
+       }
     }
 
     .zero,
     .three {
-      padding: 20px;
-      height: 6.5vh;
-      width: 6vw;
+      // padding: 20px;
+      // height: 6.5vh;
+      // width: 6vw;
+
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .zero {
@@ -153,8 +164,9 @@ header {
     }
 
     .slash {
-      margin: -23px;
-      padding-left: 45px;
+      // margin: -23px;
+      // padding-left: 45px;
+      text-align: center;
     }
   }
 }
