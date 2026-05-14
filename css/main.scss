@@ -70,7 +70,7 @@ header {
 
   .ink-and-bio-pic {
     grid-area: ink-and-bio-pic;
-    margin: -30% 0;
+    margin: -50% 0 -15% 0;
 
     img {
       width: 100%;
@@ -86,18 +86,26 @@ header {
 
 }
 
-.commsion-section {
+.commission-section {
+  // outline: solid red 10px;
   display: grid;
-  grid-template-areas: "commsion-banner"
-  "commsion-text slots-open-box";
-  grid-template-columns: 40% auto;
+  // Each line of grid template areas is a row
+  // Each row needs the same number of items in it
+  // That's how you set the number of columns.
+  grid-template-areas: 
+    "commission-banner commission-banner"
+    "commission-text slots-open-box";
+  // Grid-template-columns only sets the WIDTH of each
+  // column, it does not set the layout to act as a single
+  // column; grid-template-rows sets the height of each row
+  grid-template-columns: auto 120px;
   gap: 10px;
   width: 90%;
   max-width: 1440px;
-  margin: 1 auto;
-  position: center;
+  margin: 0 auto;
 
   .commission-text {
+    grid-area: commission-text;
 
     h1 {
       color: #0E1242;
@@ -105,8 +113,9 @@ header {
     }
   }
 
-  .commsion-banner {
-    margin: 60% 0;
+  .commission-banner {
+    // margin: 60% 0;
+    grid-area: commission-banner;
 
     img {
       width: 100%;
@@ -171,90 +180,104 @@ header {
   }
 }
 
-.left-decore{
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  grid-area: left-decore;
- 
-  .art-gallery {
-    color: #43455D;
-  }
+.gallery-section {
+  display: grid;
+  grid-template-areas: "left-decore gallery-buttons";
+  grid-template-columns: 30% 70%;
 
-  .jappanese-text {
+  .left-decore {
+    padding: 15px;
     display: flex;
-    flex-direction: row;
-    gap: 0;
+    flex-direction: column;
+    grid-area: left-decore;
+  
+    .art-gallery {
+      color: #43455D;
+    }
 
-    h1 {
-      background: #42E97A;
-      width: 90px;
+    .jappanese-text {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+
+      h1 {
+        background: #42E97A;
+        width: 90px;
+        height: auto;
+        margin: 15px;
+        font-size: 80px;
+        color: #101344;
+      }
+    }
+
+    .left-decore-box-neongreen{
+      background: #97E826;
+      width: 200px;
       height: auto;
       margin: 15px;
-      font-size: 80px;
-      color: #101344;
+    }
+
+    .left-decore-box-lightgreen{
+      background: #CBFF5C;
+      width: 100px;
+      height: auto;
+      margin: 15px;
     }
   }
 
-  .left-decore-box-neongreen{
-    background: #97E826;
-    width: 200px;
-    height: auto;
-    margin: 15px;
-  }
+  .gallery-buttons {
+    grid-area: gallery-buttons;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-  .left-decore-box-lightgreen{
-    background: #CBFF5C;
-    width: 100px;
-    height: auto;
-    margin: 15px;
-  }
-}
+    .button{
+      /*background-image: url('../images/SVG/');*/
+      /*background-repeat: no-repeat;*/
+      /*background-size: 100%;*/
+      background-color: #D4FFBE;
+      // height: 300px;
+      // width: 300px;
+      
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
 
-.gallery-buttons {
-  .character-button{
-    /*background-image: url('../images/SVG/');*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 100%;*/
-    background-color: #D4FFBE;
-    height: 300px;
-    width: 300px;
-  }
+      img {
+        width: 30%;
+      }
+    }
 
-  .Ui-button{
-    /*background-image: url('../images/SVG/');*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 100%;*/
-    background-color: #D4FFBE;
-    height: 300px;
-    width: 300px;
-  }
+    .character-button {
+      /*background-image: url('../images/SVG/');*/
+      /*background-repeat: no-repeat;*/
+      /*background-size: 100%;*/
+    }
 
-  .Bg-button{
-    /*background-image: url('../images/SVG/');*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 100%;*/
-    background-color: #D4FFBE;
-    height: 300px;
-    width: 300px;
-  }
+    .Ui-button{
+      /*background-image: url('../images/SVG/');*/
+      /*background-repeat: no-repeat;*/
+      /*background-size: 100%;*/
+    }
 
-  .animation-button{
-    /*background-image: url('../images/SVG/');*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 100%;*/
-    background-color: #D4FFBE;
-    height: 300px;
-    width: 300px;
-  }
+    .Bg-button{
+      /*background-image: url('../images/SVG/');*/
+      /*background-repeat: no-repeat;*/
+      /*background-size: 100%;*/
+    }
 
-  .graphic-button{
-    /*background-image: url('../images/SVG/');*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 100%;*/
-    background-color: #D4FFBE;
-    height: 300px;
-    width: 300px;
+    .animation-button{
+      /*background-image: url('../images/SVG/');*/
+      /*background-repeat: no-repeat;*/
+      /*background-size: 100%;*/
+    }
+
+    .graphic-button{
+      /*background-image: url('../images/SVG/');*/
+      /*background-repeat: no-repeat;*/
+      /*background-size: 100%;*/
+    }
   }
 }
 
