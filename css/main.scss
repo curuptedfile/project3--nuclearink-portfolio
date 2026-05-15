@@ -233,6 +233,7 @@ header {
   }
 
   .gallery-buttons {
+    // sizing when dragging veiwport is off, different pixel messurements?
     grid-area: gallery-buttons;
     display: flex;
     flex-direction: column;
@@ -291,6 +292,7 @@ header {
 
 .footer-socials {
   background-color: #D4FFBE;
+  //correct size, but width runs and no gap
   .tiktok {
   width: 55px;
   height: auto;
@@ -308,6 +310,7 @@ header {
 }
 
 .footer-text {
+  //no gap? also still wont be vertically aligned
   background-color:#D4FFBE;
   height: 420px;
   width: 300px;
@@ -319,13 +322,15 @@ header {
 }
 
 .inkbottle{
-  height: 550px;
-  width: 550px;
+  height: auto;
+  width: 420px;
+  z-index: 100;
 }
 
 .footer-teal-box{
   background-color: #36BF84;
   height: 550px;
   width: auto;
+  
 }
 

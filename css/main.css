@@ -257,8 +257,9 @@ header .nuclear-ink-title {
 }
 
 .inkbottle {
-  height: 550px;
-  width: 550px;
+  height: auto;
+  width: 420px;
+  z-index: 100;
 }
 
 .footer-teal-box {
