@@ -197,8 +197,9 @@ header {
   
     .art-gallery {
       color: #43455D;
-      padding: -20%;
-
+      margin: -4px;
+      padding-left: 20px;
+      font-size: clamp(2.2rem,4.5vw,5.2rem);
     }
 
     .jappanese-text {
@@ -235,8 +236,9 @@ header {
     grid-area: gallery-buttons;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-
+    margin-top: 66px;
+    height: auto;
+    width: 76.8vw;
     .button{
       /*background-image: url('../images/SVG/');*/
       /*background-repeat: no-repeat;*/
@@ -289,14 +291,30 @@ header {
 
 .footer-socials {
   background-color: #D4FFBE;
+  .tiktok {
+  width: 55px;
+  height: auto;
+  margin: 15px;
+  }
+  .instagram{
+  width: 75px; 
+  height: auto;
+  }
+  .youtube{
+  width: 65px;
+  height: auto;
+  }
+
 }
 
 .footer-text {
   background-color:#D4FFBE;
   height: 420px;
   width: 300px;
+  margin: 10px;
+  gap: 20px;
   grid-template-rows: auto;
-  grid-template-areas: "Biography contact character-design"
+  grid-template-areas: "Biography contact character-design "
   "Backdrops animations graphic-design physical-work"
 }
 
