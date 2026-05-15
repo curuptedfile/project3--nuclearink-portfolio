@@ -87,7 +87,6 @@ header {
 }
 
 .commission-section {
-  // outline: solid red 10px;
   display: grid;
   // Each line of grid template areas is a row
   // Each row needs the same number of items in it
@@ -106,9 +105,12 @@ header {
 
   .commission-text {
     grid-area: commission-text;
+    font-size: 280%;
+
 
     h1 {
       color: #0E1242;
+      text-align: center;
       background-color: #42E97A;
     }
   }
@@ -116,7 +118,7 @@ header {
   .commission-banner {
     // margin: 60% 0;
     grid-area: commission-banner;
-
+    margin: 8% 0 2% 0; //top 8%, right 0, bottom 2%, left 0
     img {
       width: 100%;
       height: auto;
@@ -126,13 +128,15 @@ header {
   .slots-open {
     display: flex;
     flex-direction: column;
-    margin: 0 15px; // top and bottom are 0, left and right are 15px
+    margin: -30px 15px; // top and bottom are -30, left and right are 15px
 
     h1{
       color: #D4FFBE;
+      text-align: center;
+      padding-right: 12px;
+      
       // margin-left: 10px;
     }
-    
 
     .counter-box {
       background-color: #D4FFBE;
@@ -193,6 +197,8 @@ header {
   
     .art-gallery {
       color: #43455D;
+      padding: -20%;
+
     }
 
     .jappanese-text {

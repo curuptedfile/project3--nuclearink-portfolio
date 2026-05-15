@@ -87,13 +87,16 @@ header .nuclear-ink-title {
 }
 .commission-section .commission-text {
   grid-area: commission-text;
+  font-size: 280%;
 }
 .commission-section .commission-text h1 {
   color: #0E1242;
+  text-align: center;
   background-color: #42E97A;
 }
 .commission-section .commission-banner {
   grid-area: commission-banner;
+  margin: 8% 0 2% 0;
 }
 .commission-section .commission-banner img {
   width: 100%;
@@ -102,10 +105,12 @@ header .nuclear-ink-title {
 .commission-section .slots-open {
   display: flex;
   flex-direction: column;
-  margin: 0 15px;
+  margin: -30px 15px;
 }
 .commission-section .slots-open h1 {
   color: #D4FFBE;
+  text-align: center;
+  padding-right: 12px;
 }
 .commission-section .slots-open .counter-box {
   background-color: #D4FFBE;
@@ -148,6 +153,7 @@ header .nuclear-ink-title {
 }
 .gallery-section .left-decore .art-gallery {
   color: #43455D;
+  padding: -20%;
 }
 .gallery-section .left-decore .jappanese-text {
   display: flex;
