@@ -258,79 +258,48 @@ header {
       }
     }
 
-    .character-button {
-      /*background-image: url('../images/SVG/');*/
-      /*background-repeat: no-repeat;*/
-      /*background-size: 100%;*/
-    }
-
-    .Ui-button{
-      /*background-image: url('../images/SVG/');*/
-      /*background-repeat: no-repeat;*/
-      /*background-size: 100%;*/
-    }
-
-    .Bg-button{
-      /*background-image: url('../images/SVG/');*/
-      /*background-repeat: no-repeat;*/
-      /*background-size: 100%;*/
-    }
-
-    .animation-button{
-      /*background-image: url('../images/SVG/');*/
-      /*background-repeat: no-repeat;*/
-      /*background-size: 100%;*/
-    }
-
-    .graphic-button{
-      /*background-image: url('../images/SVG/');*/
-      /*background-repeat: no-repeat;*/
-      /*background-size: 100%;*/
-    }
   }
 }
 
-.footer-socials {
-  background-color: #D4FFBE;
-  //correct size, but width runs and no gap
-  .tiktok {
-  width: 55px;
-  height: auto;
-  margin: 15px;
+footer{
+  display: grid;
+  // Each line of grid template areas is a row
+  // Each row needs the same number of items in it
+  // That's how you set the number of columns.
+  grid-template-areas: 
+    "biography biography biography character-design animations"
+    "contact-me contact-me contact-me ui-design graphic-design"
+    "tiktok instagram youtube backdrops physical-work";
+  // Grid-template-columns only sets the WIDTH of each
+  // column, it does not set the layout to act as a single
+  // column; grid-template-rows sets the height of each row
+  grid-template-columns: 12% 12% 12% 32% 32%;
+    .footer-socials {
+    background-color: #D4FFBE;
+    height: auto;
+    width: 5%;
+
   }
-  .instagram{
-  width: 75px; 
-  height: auto;
+
+  .footer-text {
+    //no gap? also still wont be vertically aligned
+    background-color:#D4FFBE;
+    height: 420px;
+    width: 300px;
+    margin: 10px;
+    gap: 20px;
   }
-  .youtube{
-  width: 65px;
-  height: auto;
+}
+
+.inkbottle{ //NOT displaying teal box when nesting in inkbottle
+    height: auto;
+    width: 420px;
+    z-index: 100;
+    display: flex;
   }
-
-}
-
-.footer-text {
-  //no gap? also still wont be vertically aligned
-  background-color:#D4FFBE;
-  height: 420px;
-  width: 300px;
-  margin: 10px;
-  gap: 20px;
-  grid-template-rows: auto;
-  grid-template-areas: "Biography contact character-design "
-  "Backdrops animations graphic-design physical-work"
-}
-
-.inkbottle{
-  height: auto;
-  width: 420px;
-  z-index: 100;
-}
-
-.footer-teal-box{
-  background-color: #36BF84;
-  height: 550px;
-  width: auto;
-  
-}
-
+  .footer-teal-box{
+    background-color: #36BF84;
+    height: 20%;
+    width: 1000px;
+    
+  }
