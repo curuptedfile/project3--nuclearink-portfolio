@@ -291,41 +291,47 @@ header {
 }
 
  
+footer{
+  .footer-content{  //no gap? also still wont be horizontally aligned
+    display: grid;
+    grid-template-areas: 
+      "biography biography biography character-design animations"
+      "contact-me contact-me contact-me ui-design graphic-design"
+      "tiktok instagram youtube backdrops physical-work";
+      grid-template-columns: 12% 12% 12% 32% 32%;
+      margin: 35px;
+      gap: 200px;
+       z-index: 100;
 
-footer{  //no gap? also still wont be horizontally aligned
-  display: grid;
-  grid-template-areas: 
-    "biography biography biography character-design animations"
-    "contact-me contact-me contact-me ui-design graphic-design"
-    "tiktok instagram youtube backdrops physical-work";
-    grid-template-columns: 12% 12% 12% 32% 32%;
-    margin: 35px;
-    gap: 200px;
+      .footer-socials {
+      background-color: #D4FFBE;
+      height: auto;
+      width: 5%;
+      
+    }
 
-    .footer-socials {
-    background-color: #D4FFBE;
-    height: auto;
-    width: 5%;
-    
+    .footer-text {
+      background-color:#D4FFBE;
+      height: auto;
+      width: 300px;
+    }
   }
 
-  .footer-text {
-    background-color:#D4FFBE;
-    height: auto;
-    width: 300px;
+  .footer-images {
+    display: grid;
+    .inkbottle{ 
+        width: 70vw;
+        height: auto; 
+        z-index: 50;
+        margin: -350px 0 0 0;
+    }
+    .footer-teal-box{
+        background-color: #36BF84;
+        width: auto;
+        height: 60vh;
+        margin: -350px 0 0 0;
+    }
   }
 }
 
-.inkbottle{ //NOT displaying teal box when nesting in inkbottle
-    height: auto;
-    width: 420px;
-    z-index: 100;
-    display: flex;
-}
 
-.footer-teal-box{
-    background-color: #36BF84;
-    height: 20%;
-    width: 1000px;
-    
-}

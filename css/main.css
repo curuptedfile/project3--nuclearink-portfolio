@@ -231,33 +231,36 @@ header .nuclear-ink-title {
   background-size: 100%;
 }
 
-footer {
+footer .footer-content {
   display: grid;
   grid-template-areas: "biography biography biography character-design animations" "contact-me contact-me contact-me ui-design graphic-design" "tiktok instagram youtube backdrops physical-work";
   grid-template-columns: 12% 12% 12% 32% 32%;
   margin: 35px;
   gap: 200px;
+  z-index: 100;
 }
-footer .footer-socials {
+footer .footer-content .footer-socials {
   background-color: #D4FFBE;
   height: auto;
   width: 5%;
 }
-footer .footer-text {
+footer .footer-content .footer-text {
   background-color: #D4FFBE;
   height: auto;
   width: 300px;
 }
-
-.inkbottle {
-  height: auto;
-  width: 420px;
-  z-index: 100;
-  display: flex;
+footer .footer-images {
+  display: grid;
 }
-
-.footer-teal-box {
+footer .footer-images .inkbottle {
+  width: 70vw;
+  height: auto;
+  z-index: 50;
+  margin: -350px 0 0 0;
+}
+footer .footer-images .footer-teal-box {
   background-color: #36BF84;
-  height: 20%;
-  width: 1000px;
+  width: auto;
+  height: 60vh;
+  margin: -350px 0 0 0;
 }/*# sourceMappingURL=main.css.map */
