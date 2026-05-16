@@ -186,15 +186,12 @@ header .nuclear-ink-title {
   grid-area: gallery-buttons;
   display: flex;
   flex-direction: column;
-  margin-top: 66px;
+  margin-top: 10px;
   height: auto;
-  width: 76.8vw;
+  width: 64.6vw;
+  gap: 20px;
 }
 .gallery-section .gallery-buttons .button {
-  /*background-image: url('../images/SVG/');*/
-  /*background-repeat: no-repeat;*/
-  /*background-size: 100%;*/
-  background-color: #D4FFBE;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -202,12 +199,44 @@ header .nuclear-ink-title {
 }
 .gallery-section .gallery-buttons .button img {
   width: 30%;
+  margin: 2% 0 2% 3%;
+  background-color: #D4FFBE;
+}
+.gallery-section .gallery-buttons .button h1 {
+  background-color: #D4FFBE;
+}
+.gallery-section .gallery-buttons .character-button {
+  background-image: url("../images/bg-card-1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.gallery-section .gallery-buttons .Ui-button {
+  background-image: url("../images/bg-card-2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.gallery-section .gallery-buttons .Bg-button {
+  background-image: url("../images/bg-card-3.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.gallery-section .gallery-buttons .animation-button {
+  background-image: url("../images/bg-card-4.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.gallery-section .gallery-buttons .graphic-button {
+  background-image: url("../images/bg-card-5.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 footer {
   display: grid;
   grid-template-areas: "biography biography biography character-design animations" "contact-me contact-me contact-me ui-design graphic-design" "tiktok instagram youtube backdrops physical-work";
   grid-template-columns: 12% 12% 12% 32% 32%;
+  margin: 35px;
+  gap: 200px;
 }
 footer .footer-socials {
   background-color: #D4FFBE;
@@ -216,10 +245,8 @@ footer .footer-socials {
 }
 footer .footer-text {
   background-color: #D4FFBE;
-  height: 420px;
+  height: auto;
   width: 300px;
-  margin: 10px;
-  gap: 20px;
 }
 
 .inkbottle {
