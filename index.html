@@ -136,46 +136,54 @@
 
     <footer>
       <div class="footer-content">
-        <div class="footer-text">
-          <h1 class="biography">Biography</h1>
-          <h1 class="contact-me">Contact me</h1>
-          <h1 class="character-design">Character design</h1>
-          <h1 class="ui-design">UI design</h1>
-          <h1 class="backdrops">Backdrops</h1>
-          <h1 class="animations">Animations</h1>
-          <h1 class="graphic-design">Graphic design</h1>
-          <h1 class="physical-work">Physical work</h1>
-        </div>
+        <!-- <div class="footer-text"> --> <!-- Removing the .footer-text container so your CSS grid can target the individual footer items -->
+          <!-- @Peyton: Wrapped these other footer links in anchor tags for consistency, and to prep for your additional pages. -->
+          <a class="biography"><h1>Biography</h1></a>
+          <a class="contact-me"><h1>Contact me</h1></a>
+          <a class="character-design"><h1>Character design</h1></a>
+          <a class="ui-design"><h1>UI design</h1></a>
+          <a class="backdrops"><h1>Backdrops</h1></a>
+          <a class="animations"><h1>Animations</h1></a>
+          <!-- @Peyton: Moved your footer socials into footer content so that it matches the CSS grid that you set up -->
+          <div class="footer-socials"> 
+            <!-- @Peyton: Simplified the structure here -->
+            <!-- this is the tiktok logo -->
+            <a class="tiktok" href="#" target="_blank">
+              <img src="images/tiktok-icon.png" alt="blue tiktok icon">
+            </a>
 
-        <div class="footer-socials">
-        <div class="tiktok">
-              <!-- this is the tiktok logo -->
-                  <a href="#" target="_blank">
-                  <img src="images/tiktok-icon.png" alt="blue tiktok icon">
-                  </a>
-        </div>
+            <!-- this is the instagram logo -->
+            <a class="instagram" href="#" target="_blank">
+              <img src="images/insta-icon.png" alt="blue instagram icon">
+            </a>
 
-        <div class="instagram">
-              <!-- this is the instagram logo -->
-                  <a href="#" target="_blank">
-                  <img src="images/insta-icon.png" alt="blue instagram icon">
-                  </a>
-        </div>
+            <!-- this is the youtube logo -->
+            <a class="youtube"  href="#" target="_blank">
+              <img src="images/youtube-icon.png" alt="blue youtube icon">
+            </a>
+          </div>
 
-        <div class="youtube">
-              <!-- this is the youtube logo -->
-                  <a href="#" target="_blank">
-                  <img src="images/youtube-icon.png" alt="blue youtube icon">
-                  </a>
-        </div>
+          <a class="graphic-design"><h1>Graphic design</h1></a>
+          <a class="physical-work"><h1>Physical work</h1></a>
+        <!-- </div> --> <!-- Removing the .footer-text container so your CSS grid can target the individual footer items -->
+
+      <!-- @Peyton: You had a missing closing tag for your div.footer-content here -->
       </div>
-        
+
       <div class="footer-images">
-        <img class="inkbottle" src="images/ink-bottle-top.png" alt="top view of an ink bottle with ink spiling out">
-        <div class="footer-teal-box">&nbsp;</div>
+        <!-- @Peyton: Made a new crop of this image -->
+        <img class="inkbottle" src="images/ink-bottle-top-cropped.png" alt="top view of an ink bottle with ink spiling out">
+        <!-- @Peyton: We're going to handle the big teal box with a background color on the whole footer element -->
+        <!-- <div class="footer-teal-box">&nbsp;</div> -->
       </div>
-     
+
+      <div class="copyright">
+        <p>&copy; NuclearInk 2026</p>
+      </div>
+
     </footer>
+    
   </div>
+  <!-- End div.all -->
   </body>
 </html>

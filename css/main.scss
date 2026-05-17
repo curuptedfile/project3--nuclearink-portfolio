@@ -291,46 +291,98 @@ header {
 }
 
  
-footer{
-  .footer-content{  //no gap? also still wont be horizontally aligned
-    display: grid;
-    grid-template-areas: 
-      "biography biography biography character-design animations"
-      "contact-me contact-me contact-me ui-design graphic-design"
-      "tiktok instagram youtube backdrops physical-work";
-      grid-template-columns: 12% 12% 12% 32% 32%;
-      margin: 35px;
-      gap: 200px;
-       z-index: 100;
+footer {
+  background-color: #36BF84;
+  padding: 40px 40px 0 0;
+  margin-top: 120px;
 
-      .footer-socials {
+  display: grid;
+  grid-template-areas: 
+    "ink footer-content"
+    "ink copyright";
+    grid-template-columns: min(500px, 25%) auto;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+
+  .footer-content {
+    grid-area: footer-content;
+    display: grid;
+    // @Peyton: You honestly were so close here. The problem is that you created
+    // other divs inside of .footer-content and also forgot to tell the individual
+    // items which area they belong here in your CSS.
+    grid-template-areas: 
+      "biography character-design animations"
+      "contact-me ui-design graphic-design"
+      "socials backdrops physical-work";
+    grid-template-columns: 1fr 1fr 1fr;
+    // margin: 35px;
+    gap: 20px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 100;
+
+    a {
       background-color: #D4FFBE;
-      height: auto;
-      width: 5%;
-      
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .footer-text {
-      background-color:#D4FFBE;
-      height: auto;
-      width: 300px;
+    .footer-socials {
+      display: flex;
+      flex-direction: row;
+      gap: 20px; // Match the gap of .footer-content
+
+      a {
+        flex-basis: 33.333%;
+
+        img {
+          aspect-ratio: 1/1;
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+
+      .tiktok {
+        padding: 5%; // This makes the visual spacing around the icon consistent with the others. 
+      }
+    }
+
+    // .footer-text {
+    //   background-color:#D4FFBE;
+    //   height: auto;
+    //   width: 300px;
+    // }
+  }
+
+  // .biography {
+  //   grid-template-area: biography;
+  // }
+
+  .footer-images {
+    grid-area: ink;
+    position: relative;
+    z-index: 50;
+    height: calc(100% + 120px);
+    margin-top: -120px; // This gives the overlap at the top
+    margin-bottom: 0; 
+    margin-left: 0;
+    pointer-events: none;
+
+    .inkbottle { 
+      aspect-ratio: 1/1;
+      width: 100%;
+      height: 100%; 
+      object-fit: contain;
+      object-position: bottom left;
     }
   }
 
-  .footer-images {
-    display: grid;
-    .inkbottle{ 
-        width: 70vw;
-        height: auto; 
-        z-index: 50;
-        margin: -350px 0 0 0;
-    }
-    .footer-teal-box{
-        background-color: #36BF84;
-        width: auto;
-        height: 60vh;
-        margin: -350px 0 0 0;
-    }
+  .copyright {
+    grid-area: copyright;
+    padding-bottom: 20px;
+    text-align: right;
   }
 }
 
